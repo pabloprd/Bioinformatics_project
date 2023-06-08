@@ -20,7 +20,7 @@ chromosome #, chromosome start position of peak summit, chromosome end position 
 
 We used the neural network and methods from the Basset paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4937568/
 
-This convolutional neural network and its associated methods were modified for our project involving condensin. The summary of the process is as follows: We read our input files (the ChiP-seq data provided by Dr. Swygert) and modified the format (by padding) them so the CNN would be able to accept them. From there we created training, validation, and testing datasets. We trained the models on different motif lengths to decide which one would be the best.
+This convolutional neural network and its associated methods were modified for our project involving condensin. The summary of the process is as follows: We read our input files (the ChiP-seq data provided by Dr. Swygert) and modified the format (by padding them) so the CNN would be able to accept them. From there we created training, validation, and testing datasets. We trained the models on different motif lengths to decide which one would be the best.
 
 The Convolutional neural network used for this project ultimately defines whether what you input (after the model is trained) is a motif or not. But what we did based on the Basset paper was to extract the motifs from each filter of the CNN. This gave us a list of probable Condensin motifs. 
 
