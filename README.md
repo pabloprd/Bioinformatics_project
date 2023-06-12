@@ -1,4 +1,4 @@
-# Condensin prediction using neural networks
+# Condensin motif prediction using neural networks
 
 
 # Introduction
